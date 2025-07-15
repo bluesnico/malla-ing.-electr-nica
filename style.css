@@ -1,7 +1,11 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   padding: 2rem;
-  background: #f0f0f0;
+  background: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
 }
 
 #malla {
@@ -12,21 +16,22 @@ body {
 
 .materia {
   background: white;
-  border: 2px solid #999;
+  border: 2px solid #aaa;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 8px;
   position: relative;
-  cursor: pointer;
   transition: 0.3s;
-}
-
-.materia.hecha {
-  background: #d4edda;
-  border-color: #28a745;
-  text-decoration: line-through;
+  cursor: pointer;
 }
 
 .materia.bloqueada {
   opacity: 0.4;
   pointer-events: none;
 }
+
+.materia.completada {
+  background: #c8f7c5;
+  border-color: #2ecc71;
+  text-decoration: line-through;
+}
+
